@@ -1,6 +1,5 @@
 <?php
 require_once("./DB_config.php");
-require_once("./index_menu.html");
 
 if(empty($_GET['libid'])){
     die('libID is empty');
@@ -20,5 +19,6 @@ if($result && mysqli_num_rows($result)!=0)
 }
 else
 {
-    die('libID not found');
+    echo '<script>alert("此人未在圖書館內");window.location.assign("./adduser.html");</script>';
 }
+echo '<script>window.location.assign("./")</script>';

@@ -38,7 +38,7 @@ $REM=$_POST['remark'];
 
 //修改指定資料
 
-if(!mysqli_query($link,"UPDATE `readerinfo` SET R_Name='$name',R_Telephone='$telephone',R_Birthday='$BD'
+if(!mysqli_query($link,"UPDATE `readerinfo` SET R_Identity='$id',R_Name='$name',R_Telephone='$telephone',R_Birthday='$BD'
 ,R_AgreementClause='$ATC',R_AgreeDate='$AGD',R_AccessDate='$AD',R_Remark='$REM'
  WHERE R_Identity='$Orid'")
 )

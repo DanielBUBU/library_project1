@@ -36,22 +36,19 @@ $REM=$_POST['remark'];
 $libid=$_POST['libid'];
 
 if(empty($name)){
-    die('name is empty');
+    echo "<script>alert('讀者姓名未輸入');window.history.back(-1);</script>";
 }
 if(empty($id)){
-    die('id is empty');
+    echo "<script>alert('讀者ID未輸入');window.history.back(-1);</script>";
 }
 if(empty($phone)){
-    die('phone is empty');
+    echo "<script>alert('讀者電話未輸入');window.history.back(-1);</script>";
 }
 if(empty($bd)){
-    die('bd is empty');
-}
-if(empty($ATC)){
-    die('agreementclause is empty');
+    echo "<script>alert('讀者生日未輸入');window.history.back(-1);</script>";
 }
 if(empty($libid)){
-    die('libid is empty');
+    echo "<script>alert('讀者換証證號未輸入');window.history.back(-1);</script>";
 }
 
 
@@ -69,23 +66,23 @@ if($result)
         $AD=$LET;
         $indate=date("Y-m-n");
         $intime=date("H:i:s");
-        mysqli_query($link,"INSERT INTO readerinfo(R_Identity,R_Name,R_Telephone,R_Birthday,R_LastEnterTime,R_AgreementClause,R_AgreeDate,R_AccessDate) 
-VALUES ('$id','$name','$phone','$bd','$LET','$ATC','$AGD','$AD')");
+        mysqli_query($link,"INSERT INTO readerinfo(R_Identity,R_Name,R_Telephone,R_Birthday,R_LastEnterTime,R_AgreementClause,R_AgreeDate,R_AccessDate,R_Remark) 
+VALUES ('$id','$name','$phone','$bd','$LET','$ATC','$AGD','$AD','$REM')");
         mysqli_query($link,"INSERT INTO dailyinfo(D_Identity,D_Day,D_TodayID,D_Entertime) 
 VALUES ('$id','$indate','$libid','$intime')");
     }
     else
     {
-        die('id is existed');
+        echo "<script>alert('讀者ID已存在');window.history.back(-1);</script>";
     }
 }
 else
 {
-    die('result is not existed');
+    echo "<script>alert('資料庫存取錯誤');window.history.back(-1);</script>";
 }
 
 mysqli_free_result($result);
 
 
 //返回列表頁面
- header("Location:./alluser.php");
+ //header("Location:./alluser.php");
