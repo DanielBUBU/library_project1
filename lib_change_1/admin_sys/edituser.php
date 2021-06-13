@@ -35,11 +35,10 @@ else
         <input id="submit" type="submit" value="提交修改">
 </form>
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
-        
+      /*  
 // 驗證中文名稱
 function isChinaName(name) {
 var pattern = /^[\u4E00-\u9FA5]{1,6}$/;
@@ -103,5 +102,5 @@ $('#user').submit();
 }
 $('#submit').on('click', function() {
 formValidate();
-});
+});*/
 </script>
