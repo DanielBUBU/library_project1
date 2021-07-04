@@ -1,0 +1,16 @@
+html {
+    background-color: #acacac;
+}
+
+body {
+    text-align: center;
+    margin: 0px 0px;
+}
+
+#logout-but {
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 18px;
+    background-color: #A00200;
+}

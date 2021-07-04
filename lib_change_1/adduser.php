@@ -86,4 +86,4 @@ mysqli_free_result($result);
 
 
 //返回列表頁面
- header("Location:./index.php");
+ header("Location:./");

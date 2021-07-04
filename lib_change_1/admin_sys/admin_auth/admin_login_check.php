@@ -13,13 +13,13 @@
         if ($result && mysqli_fetch_assoc($result)['password']==$admin_ps)
         {
             $_SESSION['username'] = $admin_ac;
-            header("location:../admin_index.php");
+            header("location:../");
             exit();
         }
         else
         {
             
-            header("location:./admin_login.html");
+            header("location:../admin_login.php");
             exit();
         }
  ?>

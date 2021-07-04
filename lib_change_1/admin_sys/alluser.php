@@ -1,3 +1,6 @@
+<style>
+    <?php  include "../style/list.css"?>
+</style>
 
 <table>
     <tr><th>ID</th><th>名字</th><th>電話</th><th>生日</th><th>最後進入日期</th><th>合約同意</th><th>同意日期</th>
@@ -28,7 +31,7 @@ if($result)
         //print_r($result_arr);
         echo "<tr><td>$id</td><td>$name</td><td>$telephone</td><td>$BD</td><td>$LET</td><td>$ATC</td><td>$AGD</td>
         <td>$AD</td><td>$REM</td>
-        <td><a href='./edituser.php?id=$id'>修改</a> 
+        <td><a href='./edituser.php?id=$id'>修改</a> /
         <a href='./deleteuser.php?id=$id'>刪除</a></td></tr>";
     }
 }
@@ -37,3 +40,4 @@ if($result)
 
 ?>
 </table>
+

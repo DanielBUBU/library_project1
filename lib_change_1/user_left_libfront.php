@@ -1,3 +1,7 @@
+<?php
+    require_once("./index_menu.html");
+?>
+
 <!DOCTYPE html>
 <html lang="ch-TW">
 
@@ -9,10 +13,11 @@
 
 <body>
     <form action="./user_left_lib.php" method="GET">
-        <label>換証證號</label><input type="text" name="libid">
-        <input type="submit" value="提交">
+        <ul>
+            <li><label>換証證號</label><input type="text" name="libid"></li>
+            <li><input type="submit" value="提交"></li>
+        </ul>
     </form>
-    <a href="./">回到首頁</a>
 </body>
 
 </html>

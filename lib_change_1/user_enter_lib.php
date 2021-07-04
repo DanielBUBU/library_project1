@@ -37,12 +37,12 @@ if($result&&mysqli_num_rows($result)==1)
     }
     else
     {
-        echo '<script>alert("讀者未註冊\n將跳轉至註冊畫面");window.location.assign("./adduser.html");</script>';
+        echo '<script>alert("讀者未註冊\n將跳轉至註冊畫面");window.location.assign("./adduserfront.php");</script>';
     }
 }
 else
 {
-    echo '<script>alert("讀者未註冊\n將跳轉至註冊畫面");window.location.assign("./adduser.html");</script>';
+    echo '<script>alert("讀者未註冊\n將跳轉至註冊畫面");window.location.assign("./adduserfront.php");</script>';
 }
 echo '<script>window.location.assign("./")</script>';
 ?>
