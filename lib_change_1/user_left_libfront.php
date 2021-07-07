@@ -15,8 +15,8 @@
     <form action="./user_left_lib.php" method="GET">
         <ul>
             <li><label>換証證號</label><input type="text" name="libid"></li>
-            <li><input type="submit" value="提交"></li>
         </ul>
+        <input type="submit" class="submit_but" value="提交">
     </form>
 </body>
 

@@ -16,11 +16,8 @@
         <ul>
             <li><label>讀者ID</label><input type="text" name="id"></li>
             <li><label>換証證號</label><input type="text" name="libid"></li>
-            <li><input type="submit" value="提交"></li>
         </ul>
-        
-        
-        
+        <input type="submit" value="提交">
     </form>
 </body>
 

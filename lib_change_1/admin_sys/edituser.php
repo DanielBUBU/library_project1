@@ -22,19 +22,21 @@ else
 ?>
 <form id="userform" action="edituser_server.php" method="post">
         <p>日期格式為(YYYY-MM-DD)</p>
+        <ul>
+                <li><label>最後進入時間</label><?php echo $result_arr['R_LastEnterTime']?></li>
+                <li><label>最後修改日期</label><?php echo $result_arr['R_AccessDate']?></li>
+        </ul>
         <input name="originalid" type="hidden" value="<?php echo $id ?>">
         <ul>
                 <li><label>ID</label><input id="identity" type="text" name="id" value="<?php echo $result_arr['R_Identity']?>"></li>
                 <li><label>名稱</label><input type="text" name="name" value="<?php echo $result_arr['R_Name']?>"></li>
                 <li><label>電話</label><input type="text" name="telephone" value="<?php echo $result_arr['R_Telephone']?>"></li>
                 <li><label>生日</label><input type="text" name="birthday" value="<?php echo $result_arr['R_Birthday']?>"></li>
-                <li><label>最後進入時間</label><?php echo $result_arr['R_LastEnterTime']?></li>
                 <li><label>是否同意合約</label><input type="text" name="agreementclause" value="<?php echo $result_arr['R_AgreementClause']?>"></li>
                 <li><label>同意日期</label><input type="text" name="agreedate" value="<?php echo $result_arr['R_AgreeDate']?>"></li>
-                <li><label>最後修改日期</label><?php echo $result_arr['R_AccessDate']?></li>
                 <li><label>備註</label><input type="text" name="remark" value="<?php echo $result_arr['R_Remark']?>"></li>
-                <li><input id="submit" type="submit" value="提交修改"></li>
-        </ul>        
+        </ul>
+        <input id="submit" type="submit" value="提交修改">
 </form>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

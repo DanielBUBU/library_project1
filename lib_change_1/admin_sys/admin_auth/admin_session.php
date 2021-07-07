@@ -14,7 +14,7 @@ if($admin_name == null)
 }
 else
 {
-    echo"<p>Welcome!$admin_name</p><a id='logout-but' href='./admin_logout.php'>登出</a>";
+    echo"<p>歡迎!$admin_name</p><a id='logout-but' href='./admin_logout.php'>登出</a>";
 }
 
 

@@ -1,3 +1,21 @@
 form ul li {
     display: inline-block;
 }
+
+[type~="submit"] {
+    width: 75px;
+    height: 25px;
+    border: 0;
+    background-color: #A00200;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+[type~="submit"]:hover {
+    width: 75px;
+    height: 25px;
+    color: #A00200;
+    background-color: #fff;
+    border: 2px #A00200 solid;
+}

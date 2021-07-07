@@ -24,8 +24,8 @@ require_once("./index_menu.html")
             <li><label>生日</label><input type="text" name="birthday"></li>
             <li><label>是否同意合約</label><input type="text" name="agreementclause"></li>
             <li><label>備註</label><input type="text" name="remark"></li>
-            <li><input type="submit" value="提交"></li>
         </ul>
+        <input type="submit" value="提交">
     </form>
 </body>
 

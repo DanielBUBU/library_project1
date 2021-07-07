@@ -1,10 +1,11 @@
 nav {
     margin: 0px 0px;
-    background-color: #808080;
+    background-color: #404849;
 }
 
 nav ul {
     text-align: center;
+    padding: 0px 0px;
 }
 
 nav ul li {
@@ -14,10 +15,22 @@ nav ul li {
 }
 
 nav ul li a {
+    width: 100px;
+    height: 20px;
     text-decoration: none;
     font-size: 12px;
     color: #fff;
     padding: 10px 18px;
     background-color: #A00200;
+    border: 2px #A00200 solid;
     float: left;
+}
+
+nav ul li a:hover {
+    width: 100px;
+    height: 20px;
+    padding: 10px 18px;
+    color: #A00200;
+    background-color: #fff;
+    border: 2px #A00200 solid;
 }

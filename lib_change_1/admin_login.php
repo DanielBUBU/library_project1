@@ -13,10 +13,10 @@
 
 <body>
     <form method="POST" action="./admin_sys/admin_auth/admin_login_check.php">
-        管理員帳號:<input name="admin_ac" type="text" />
-        <br> 密碼:
-        <input name="admin_ps" type="password" />
-        <br>
+        <ul>
+            <li><label>管理員帳號:</label><input name="admin_ac" type="text" /></li>
+            <li><label>密碼:</label><input name="admin_ps" type="password" /></li>
+        </ul>
         <input type="submit" value="Login" />
     </form>
 </body>
