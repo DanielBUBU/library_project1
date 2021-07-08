@@ -31,8 +31,7 @@ if($result)
         //print_r($result_arr);
         echo "<tr><td>$id</td><td>$name</td><td>$telephone</td><td>$BD</td><td>$LET</td><td>$ATC</td><td>$AGD</td>
         <td>$AD</td><td>$REM</td>
-        <td><a href='./edituser.php?id=$id'>修改</a> /
-        <a href='./deleteuser.php?id=$id'>刪除</a></td></tr>";
+        <td><ul><li><a href='./edituser.php?id=$id'>修改</a></li><li><a href='./deleteuser.php?id=$id'>刪除</a></li></ul></td></tr>";
     }
 }
 

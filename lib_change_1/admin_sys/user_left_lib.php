@@ -1,9 +1,12 @@
+<style>
+    <?php  include "../style/list.css"?>
+</style>
+
 <?php
 require_once("../DB_config.php");
-require_once("./admin_menu.html");
 
 if(empty($_GET['libid'])){
-    die('libID is empty');
+    echo"<script>alert('換証證號為空');window.history.back(-1);</script>";
 }
 $libid=$_GET['libid'];
 
@@ -20,6 +23,6 @@ if($result && mysqli_num_rows($result)!=0)
 }
 else
 {
-    die('libID not found');
+    echo '<script>alert("此人未在圖書館內");window.location.assign("../adduser.html");</script>';
 }
-header("Location:./alluser.php");
+echo '<script>window.location.assign("./")</script>';
