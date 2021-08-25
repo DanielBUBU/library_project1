@@ -1,5 +1,10 @@
+form ul {
+    padding: 0px 0px;
+}
+
 form ul li {
-    display: inline-block;
+    margin: auto 25%;
+    display: block;
 }
 
 [type~="submit"] {
@@ -18,4 +23,22 @@ form ul li {
     color: #A00200;
     background-color: #fff;
     border: 2px #A00200 solid;
+}
+
+form ul li input {
+    margin: 8px 0;
+    display: inline-block;
+    background-color: #a0906c;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form ul li input:focus {
+    border: 3px solid #555;
+}
+
+form ul li label {
+    float: left;
+    width: 10em;
+    margin-right: 1em;
 }
